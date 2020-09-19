@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class BruteCollinearPoints {
-    private LineSegment[] linesegments;
+    private LineSegment[] lineSegments;
     // finds all line segments containing 4 points
     public BruteCollinearPoints(Point[] points){
         checkNull(points);
