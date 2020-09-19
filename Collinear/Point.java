@@ -103,7 +103,7 @@ public class Point implements Comparable<Point> {
         SlopeComparator(Point point){
             this.point = point;
         }
-        private int compare(Point p1, Point p2){
+        public int compare(Point p1, Point p2){
             double slope1 = p1.slopeTo(point);
             double slope2 = p2.slopeTo(point);
             return (slope1 == slope2)?0:((slope1>slope2)?1:-1);
