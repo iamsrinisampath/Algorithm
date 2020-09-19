@@ -1,4 +1,4 @@
-p/******************************************************************************
+/******************************************************************************
  *  Compilation:  javac Point.java
  *  Execution:    java Point
  *  Dependencies: none
@@ -33,7 +33,9 @@ public class Point implements Comparable<Point> {
      */
     public void draw() {
         /* DO NOT MODIFY */
-        StdDraw.point(x, y);
+        //StdDraw.setPenRadius(0.010);
+        //StdDraw.setPenColor(StdDraw.BLACK);
+        StdDraw.point(this.x, this.y);
     }
 
     /**
@@ -44,6 +46,7 @@ public class Point implements Comparable<Point> {
      */
     public void drawTo(Point that) {
         /* DO NOT MODIFY */
+        //StdDraw.setPenColor(StdDraw.BLUE);
         StdDraw.line(this.x, this.y, that.x, that.y);
     }
 
